@@ -11,22 +11,10 @@ def bot():
     resp = MessagingResponse()
     msg = resp.message()
     responded = False
-    if 'quote' in incoming_msg:
-        # return a quote
-        r = requests.get('https://api.quotable.io/random')
-        if r.status_code == 200:
-            data = r.json()
-            quote = f'{data["content"]} ({data["author"]})'
-        else:
-            quote = 'I could not retrieve a quote at this time, sorry.'
-        msg.body(quote)
-        responded = True
     if 'hello' in incoming_msg:
-        # return a cat pic
         msg.body("Hey there, welcome to ACME Bank")
         responded = True
     if 'account' in incoming_msg:
-        # return a cat pic
         msg.body("Would you like to know about creating an account or existing account?")
         responded = True
     if 'create' in incoming_msg:
@@ -34,11 +22,9 @@ def bot():
         msg.body("To open your account you should come to one of our banks in person. Don't forget to bring your ID.")
         responded = True
     if 'open' in incoming_msg:
-        # return a cat pic
         msg.body("From 10:00 am to 7:30 pm on Weekdays, 10:00 am to 1:00 pm on Saturdays")
         responded = True
     if 'existing' in incoming_msg:
-        # return a cat pic
         msg.body("What information would you like to know?")
         responded = True
     if not responded:
