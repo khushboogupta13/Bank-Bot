@@ -1,12 +1,13 @@
-# Bank-Bot
+# Bank-Bot: 
 
-- This is a bot to simplify and improve your banking experience!
-- Primarily built with DialogFlow and integrated into Telegram, WhatsApp and the web
-- The web integration also has the option of transferring control to a human agent
+- This is a chatbot which aims to simplify your banking experience by answering queries which different age groups might have.
+- Primarily built with DialogFlow and integrated into Telegram, WhatsApp and the Web.
+- The web integration also has the option of transferring control to a human agent whenever the need arises.
+- This was a submission for a hackathon organised by the AI club of IGDTUW.
 
-### Tech-Stack
-  - DialogFlow
-  - Google Cloud Platform
-  - Twilio
-  - Kommunicate
+### Tech-Stack Used:
+  - Google DialogFlow: for making the chatbot.
+  - Google Cloud Platform: for hosting the chatbot.
+  - Twilio: Used for integration of the chatbot with several social media platforms like Whatsapp, Telegram, etc.
+  - Kommunicate: Used for web integration as well as transferring control to human agent whenever the need arises.
  
